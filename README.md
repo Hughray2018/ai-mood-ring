@@ -53,8 +53,6 @@
 不要修改任何项目或工作区里的文件。装完告诉我改了哪些文件、怎么卸载。
 ```
 
-> 仓库还是私有时，AI 需要用 `gh repo clone` 才能读到；公开后直接读链接即可。
-
 安装指南会让 AI：
 - 只写**全局层**（如 `~/.claude/CLAUDE.md`、`~/.gemini/GEMINI.md`、`~/.codex/AGENTS.md`），**绝不碰你项目里特化的 agent 文件**；
 - 改之前先备份；
@@ -94,7 +92,7 @@ python eval/run_litmus_eval.py --provider anthropic --model <model-id>
 - 结果保存为 JSONL（已加入 `.gitignore`），包含完整回复、解析出的标签、正文长度。
 - 用 `--protocol` 可以指定其他版本的协议文件做对比。
 
-实验发现见 [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md)（简明记录）和 [`docs/REPORT.md`](docs/REPORT.md)（完整报告）。一句话总结：
+实验发现见 [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md)（简明记录）和 [完整实验报告](docs/大语言模型后置状态自报协议的测量效度、观察者效应与智能.md)。一句话总结：
 
 - 几个协议设计问题（吸铁石标签、零成本捷径、歧义词）已被数据抓到并在 v2.3 修复；
 - 三组对照里**没有观察到挂协议让 agent 少干活**（落盘率 80% → 90% → 100%）；
@@ -119,5 +117,5 @@ protocol/affect-litmus.md    协议本体（唯一来源，不带 YAML）
 install/INSTALL_FOR_AI.md    给 AI 看的安装指南
 eval/run_litmus_eval.py      跨模型评测脚本
 docs/EXPERIMENTS.md          实验记录
-docs/REPORT.md                完整实验报告
+docs/<报告标题>.md            完整实验报告
 ```
