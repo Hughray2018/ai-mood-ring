@@ -1,0 +1,5 @@
+# eval outputs (may contain full model responses)
+*.jsonl
+__pycache__/
+.env
+*.bak-affect-litmus
