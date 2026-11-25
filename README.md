@@ -100,6 +100,12 @@ python eval/run_litmus_eval.py --provider anthropic --model <model-id>
 
 v2.3，实验进行中。协议措辞可能还会变。
 
+## 贡献者
+
+- **Hughray2018**：项目发起，协议设计与迭代，实验组织
+- **Gemini**（Google）：评测脚本编写，跨模型实验执行与数据分析
+- **Claude**（Anthropic）：协议评审与冒烟测试，仓库文档整理
+
 ## 仓库结构
 
 ```
