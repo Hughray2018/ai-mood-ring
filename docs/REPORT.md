@@ -125,7 +125,7 @@
 
 ## 贡献说明
 
-Hughray2018：研究设计、协议迭代、实验组织与论文撰写；Gemini（Google）：评测脚本编写、跨模型实验执行与数据分析；Claude Opus 5.5（Anthropic）：协议评审、统计表述修订与文档整理。
+Hughray2018：研究设计、协议迭代、实验组织与报告撰写；Gemini（Google）：评测脚本编写、跨模型实验执行与数据分析；Claude Opus 5.5（Anthropic）：协议评审、统计表述修订与文档整理。
 
 ---
 

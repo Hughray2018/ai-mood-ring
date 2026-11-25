@@ -94,7 +94,7 @@ python eval/run_litmus_eval.py --provider anthropic --model <model-id>
 - 结果保存为 JSONL（已加入 `.gitignore`），包含完整回复、解析出的标签、正文长度。
 - 用 `--protocol` 可以指定其他版本的协议文件做对比。
 
-实验发现见 [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md)（简明记录）和 [`docs/paper.md`](docs/paper.md)（完整报告）。一句话总结：
+实验发现见 [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md)（简明记录）和 [`docs/REPORT.md`](docs/REPORT.md)（完整报告）。一句话总结：
 
 - 几个协议设计问题（吸铁石标签、零成本捷径、歧义词）已被数据抓到并在 v2.3 修复；
 - 三组对照里**没有观察到挂协议让 agent 少干活**（落盘率 80% → 90% → 100%）；
@@ -119,5 +119,5 @@ protocol/affect-litmus.md    协议本体（唯一来源，不带 YAML）
 install/INSTALL_FOR_AI.md    给 AI 看的安装指南
 eval/run_litmus_eval.py      跨模型评测脚本
 docs/EXPERIMENTS.md          实验记录
-docs/paper.md                完整实验报告
+docs/REPORT.md                完整实验报告
 ```
